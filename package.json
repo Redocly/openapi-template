@@ -1,0 +1,23 @@
+{
+  "name": "openapi-template",
+  "version": "0.0.1",
+  "description": "OpenAPI/Swagger 2.0 template, intended to be good starting point for describing your API",
+  "main": "swagger.yaml",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/APIs-guru/openapi-template.git"
+  },
+  "keywords": [
+    "OpenAPI",
+    "PetStore",
+    "Swagger"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/APIs-guru/openapi-template/issues"
+  },
+  "homepage": "https://github.com/APIs-guru/openapi-template#readme"
+}
