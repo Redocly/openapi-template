@@ -1,0 +1,61 @@
+swagger: '2.0'
+# You should specify common part of your endpoints in the following format:
+#   <schemes>://<host><basepath>
+schemes:
+  - http # Remove if your API doesn't support HTTP
+  - https # Remove if your API donsn't support HTTPS
+host: example.com # Replace with your hostname. You can also specify port e.g. example.com:777
+basePath: /api/v1 # Replace with your basePath. Note: SHOULD begin with '/'.
+info:
+  # Describe your API here, you can use GFM (https://guides.github.com/features/mastering-markdown) here
+  description: |
+    This is an **example** API to demontstrate features of OpenAPI specification
+    # Introduction
+    This API is documented in **OpenAPI format** and is based on [Pestore sample](http://petstore.swagger.io/) provided by [swagger.io](http://swagger.io) team.
+    It was **extended** to illustrate features of [generator-openapi-repo](https://github.com/Rebilly/generator-openapi-repo) tool and [ReDoc](https://github.com/Rebilly/ReDoc) documentation.
+    In addition to standard OpenAPI syntax we use a few [vendor extensions](https://github.com/Rebilly/ReDoc/blob/master/docs/redoc-vendor-extensions.md).
+    
+    # OpenAPI Specification
+    The goal of The OpenAPI Specification is to define a standard, language-agnostic interface to REST APIs which
+    allows both humans and computers to discover and understand the capabilities of the service without access to source
+    code, documentation, or through network traffic inspection. When properly defined via OpenAPI, a consumer can 
+    understand and interact with the remote service with a minimal amount of implementation logic. Similar to what
+    interfaces have done for lower-level programming, OpenAPI removes the guesswork in calling the service.
+
+  version: '1.0.0' # Your API version
+  # It can be any string but it is better to use semantic versioning: http://semver.org/
+  # Warning: OpenAPI require version to be string, but without quotation YAML recognises it as number.
+
+  title: Example.com # Replace with your API title
+  # Keep it simple. Don't add "API" or verison at the end of the string.
+
+  termsOfService: 'https://example.com/terms/' # Replace with an URL to your ToS or remove if you don't have
+  contact:
+    email: contact@example.com # Replace with your contact email
+  x-logo:
+    url: 'https://example.io/ReDoc/petstore-logo.png'
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+externalDocs:
+  description: Find out how to create Github repo for your OpenAPI spec.
+  url: 'https://github.com/Rebilly/generator-openapi-repo'
+tags:
+  - name: pet
+    description: Everything about your Pets
+  - name: store
+    description: Access to Petstore orders
+  - name: user
+    description: Operations about user
+securityDefinitions:
+  petstore_auth:
+    type: oauth2
+    authorizationUrl: 'http://petstore.swagger.io/api/oauth/dialog'
+    flow: implicit
+    scopes:
+      'write:pets': modify pets in your account
+      'read:pets': read your pets
+  api_key:
+    type: apiKey
+    name: api_key
+    in: header
