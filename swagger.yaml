@@ -24,19 +24,20 @@ info:
 
   version: '1.0.0' # Your API version
   # It can be any string but it is better to use semantic versioning: http://semver.org/
-  # Warning: OpenAPI require version to be string, but without quotation YAML recognises it as number.
+  # Warning: OpenAPI require version to be string, but without quotation YAML can recognises it as number.
 
   title: Example.com # Replace with your API title
   # Keep it simple. Don't add "API" or verison at the end of the string.
 
-  termsOfService: 'https://example.com/terms/' # Replace with an URL to your ToS or remove if you don't have
+  termsOfService: 'https://example.com/terms/' # [Optional] Replace with an URL to your ToS
   contact:
-    email: contact@example.com # Replace with your contact email
-  x-logo:
-    url: 'https://example.io/ReDoc/petstore-logo.png'
+    email: contact@example.com # [Optional] Replace with your contact email
+    url: 'http://example.com/contact' # [Optional] Replace with link to your contact form
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+  x-logo:
+    url: 'https://example.io/ReDoc/petstore-logo.png'
 externalDocs:
   description: Find out how to create Github repo for your OpenAPI spec.
   url: 'https://github.com/Rebilly/generator-openapi-repo'
