@@ -185,9 +185,9 @@ paths:
   '/echo':
     post:
       tags:
-        - User
-      summary: Get user by user name
-      description: ''
+        - Echo
+      summary: Echo test
+      description: Receive the exact message you've sent
       operationId: echo
       parameters:
         - name: message
@@ -203,7 +203,9 @@ paths:
         '200':
           description: 'OK'
           examples:
-            application/json: Hello world!
+            'application/json': 'Hello world!'
+          schema:
+            type: string
           # docuemnt headers for this repsonse
           headers:
             X-Rate-Limit: # Header name
