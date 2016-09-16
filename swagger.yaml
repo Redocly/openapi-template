@@ -1,4 +1,4 @@
-# This is an **example** API to demontstrate features of OpenAPI specification.
+# This is an **example** API to demonstrate features of OpenAPI specification.
 # It doesn't cover all OpenAPI features. For more full example check out: https://github.com/APIs-guru/petstore_extended
 
 swagger: '2.0'
@@ -6,15 +6,15 @@ swagger: '2.0'
 #   <schemes>://<host><basepath>
 schemes:
   - http # Remove if your API doesn't support HTTP
-  - https # Remove if your API donsn't support HTTPS
+  - https # Remove if your API doesn't support HTTPS
 host: example.com # Replace with your hostname. You can also specify port e.g. example.com:777
 basePath: /api/v1 # Replace with your basePath. Note: SHOULD begin with '/'.
 info:
   # Describe your API here, you can use GFM (https://guides.github.com/features/mastering-markdown) here
   description: |
-    This is an **example** API to demontstrate features of OpenAPI specification
+    This is an **example** API to demonstrate features of OpenAPI specification
     # Introduction
-    This specification is intended to to be a good starting point for describint your API in 
+    This specification is intended to to be a good starting point for describing your API in 
     [OpenAPI/Swagger format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md).
     It also demonstrates features of [generator-openapi-repo](https://github.com/Rebilly/generator-openapi-repo) tool and 
     [ReDoc](https://github.com/Rebilly/ReDoc) documentation engine. So beyond the standard OpenAPI syntax we use a few 
@@ -32,7 +32,7 @@ info:
   # Warning: OpenAPI require version to be string, but without quotation YAML can recognize it as number.
 
   title: Example.com # Replace with your API title
-  # Keep it simple. Don't add "API" or verison at the end of the string.
+  # Keep it simple. Don't add "API" or version at the end of the string.
 
   termsOfService: 'https://example.com/terms/' # [Optional] Replace with an URL to your ToS
   contact:
@@ -47,7 +47,7 @@ externalDocs:
   description: Find out how to create Github repo for your OpenAPI spec.
   url: 'https://github.com/Rebilly/generator-openapi-repo'
 produces:
-  # List of mime types your API endpoins can return.
+  # List of mime types your API endpoints can return.
   # This is a global default. You can OVERWRITE it in each specific operation.
   # Remove the ones not used in your API
   - application/json
@@ -55,7 +55,7 @@ produces:
   - text/csv
   # you can add any mime type your API produces to the list
 consumes:
-  # List of mime types your API endpoins consumes.
+  # List of mime types your API endpoints consumes.
   # This is a global default. You can OVERWRITE it in each specific operation.
   # Remove the ones not supported by your API
   - application/json
@@ -83,7 +83,7 @@ securityDefinitions:
     type: apiKey
     # The following options are specific to apiKey type
     in: header # Where API key will be passed: header or query
-    name: api_key # API key paramteer name
+    name: api_key # API key parameter name
   basic_auth: # security definition name (you can name it as you want)
     type: basic
 
@@ -96,9 +96,9 @@ paths:
     # parameters list that are used with each operation for this path
     parameters:
       - name: pretty_print
-        in: query # place where paramter is passed: path, header, query or body, formData
+        in: query # place where parameter is passed: path, header, query or body, formData
         description: Pretty print response
-        # type of the paramter: string, number, integer, boolean, array
+        # type of the parameter: string, number, integer, boolean, array
         type: boolean
     get:
       tags:
@@ -141,7 +141,7 @@ paths:
           schema: # response schema can be specified for each response
             $ref: '#/definitions/User'
           examples:
-          # repsonse samples for each type operation produces
+          # response samples for each type operation produces
             application/json:
               username: user1
               email: user@example.com
@@ -206,7 +206,7 @@ paths:
             'application/json': 'Hello world!'
           schema:
             type: string
-          # docuemnt headers for this repsonse
+          # document headers for this response
           headers:
             X-Rate-Limit: # Header name
               type: integer # Header value type
