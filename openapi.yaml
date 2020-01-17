@@ -5,7 +5,7 @@ openapi: 3.0.2
 info:
   version: '1.0.0' # Your API version
   # It can be any string but it is better to use semantic versioning: http://semver.org/
-  # Warning: OpenAPI requires the version to be a string, but without quotation YAML can recognize it as number.
+  # Warning: OpenAPI requires the version to be a string, but without quotation marks YAML can recognize it as a number.
   
   title: Example.com # Replace with your API title
   # Keep it simple. Don't add "API" or version at the end of the string.
