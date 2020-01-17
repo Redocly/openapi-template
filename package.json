@@ -1,6 +1,6 @@
 {
   "name": "openapi-template",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "OpenAPI/Swagger 2.0 template, intended to be good starting point for describing your API",
   "main": "swagger.yaml",
   "scripts": {
