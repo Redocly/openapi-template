@@ -18,7 +18,7 @@ info:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
   x-logo:
-    url: 'https://apis.guru/openapi-template/logo.png'
+    url: 'https://redocly.github.io/openapi-template/logo.png'
   
   # Describe your API here, you can use GFM (https://guides.github.com/features/mastering-markdown) here
   description: |
